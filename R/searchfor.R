@@ -17,6 +17,8 @@ searchfor <- function(text, pattern = NULL) {
 }
 
 
+## TODO
+## https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences
 .searchPatterns <- function() {
   unlist(strsplit(
   "ise
@@ -33,5 +35,14 @@ searchfor <- function(text, pattern = NULL) {
   elli
   vior
   viour
+  ae
+  oe
+  center
+  centre
+  centri
+  colour
+  color
+  bor
+  bour
   ", "\\s+"))
 }

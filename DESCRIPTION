@@ -1,8 +1,11 @@
 Package: anal
 Title: Search for Spelling and Usage Conventions
 Version: 0.0.0.9000
-Authors@R: Michael Sumner <mdsumner@gmail.com> [aut,cre]
-Description: Finds instances of patterns in text that correspond to common differences found in spelling and usage.
-Depends: R (>= 3.2.2)
+Authors@R: c(person("Sumner", "Michael", , "mdsumner@gmail.com", role = c("aut","cre")))
+Description: Finds instances of patterns in text that correspond to common
+    differences found in spelling and usage.
+Depends:
+    R (>= 3.2.2)
 License: GPL-3
 LazyData: true
+RoxygenNote: 5.0.0
