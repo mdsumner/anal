@@ -1,5 +1,3 @@
-## search for
-
 
 #' Search for pattern 
 #'
