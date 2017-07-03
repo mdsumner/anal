@@ -1,4 +1,4 @@
-Package: anal
+Package: picayune
 Title: Search for Spelling and Usage Conventions
 Version: 0.0.0.9000
 Authors@R: c(person("Sumner", "Michael", , "mdsumner@gmail.com", role = c("aut","cre")))
