@@ -7,12 +7,16 @@
 #' @return string
 #' @export
 #' @importFrom utils person
-searchfor <- function(text, pattern = NULL) {
+searchfor <- function(text, pattern = NULL, drop = TRUE) {
   if (is.null(pattern)) pattern <- .searchPatterns()
   finds <- setNames(vector("list", length(pattern)), pattern)
   for (i in seq_along(pattern)) {
     finds[[i]] <-   sort(unique(grep(pattern[i], unlist(strsplit(text, "\\s+")), value = TRUE)))
   }
+  if (drop) {
+    finds <- finds[lengths(finds) < 1L]
+    if (length(finds) < 1) warning("no candidate patterns found")
+   }
   finds
 }
 
